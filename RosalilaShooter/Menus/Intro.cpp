@@ -53,6 +53,7 @@ void intro()
             false,
             FlatShadow());
 
+if(rosalila()->api_integrator->getLeaderboardDownloadPercentage() != -1)
 rosalila()->graphics->drawText(rosalila()->utility->toString(rosalila()->api_integrator->getLeaderboardDownloadPercentage())+"%", 20, 20, false, false);
 
         current_fade_in+=2;
