@@ -144,6 +144,6 @@ void RosalilaApiIntegrator::showControllerBindingPanel()
 int RosalilaApiIntegrator::getLeaderboardDownloadPercentage()
 {
 	#ifdef STEAM
-    steamGetLeaderboardDownloadPercentage();
+    return steamGetLeaderboardDownloadPercentage();
 	#endif
 }
