@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+#define STEAM
+
 #ifdef STEAM
 #include "Steam/SteamIntegration.h"
 #endif

@@ -21,9 +21,9 @@ void RosalilaUtility::init()
 	#endif
 	#ifdef WINDOWS
 	char cCurrentPath[FILENAME_MAX];
-	_getcwd(cCurrentPath, sizeof(cCurrentPath));
-    cCurrentPath[sizeof(cCurrentPath) - 1] = '\0';
-	this->absolute_path = cCurrentPath;
+	//_getcwd(cCurrentPath, sizeof(cCurrentPath));
+    //cCurrentPath[sizeof(cCurrentPath) - 1] = '\0';
+	this->absolute_path = "";
 	#endif
 }
 
