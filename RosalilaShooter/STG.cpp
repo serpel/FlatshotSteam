@@ -444,8 +444,9 @@ void STG::logic()
 
         if(rosalila()->api_integrator->getState()=="error")
         {
-            uploadErrorLoop();
-			uploadScore();
+            bool retry = uploadErrorLoop();
+            if(retry)
+              uploadScore();
         }
     }
     if(api_state == "uploading replay")
@@ -458,7 +459,8 @@ void STG::logic()
 
         if(rosalila()->api_integrator->getState()=="error")
         {
-            uploadErrorLoop();
+          bool retry = uploadErrorLoop();
+          if(retry)
             uploadReplay();
         }
     }
@@ -480,7 +482,8 @@ void STG::logic()
 
         if(rosalila()->api_integrator->getState()=="error")
         {
-            uploadErrorLoop();
+          bool retry = uploadErrorLoop();
+          if(retry)
             findLeaderboard();
         }
     }
@@ -797,7 +800,7 @@ void STG::uploadReplay()
     api_state = "uploading replay";
 }
 
-void STG::uploadErrorLoop()
+bool STG::uploadErrorLoop()
 {
     rosalila()->graphics->notification_handler.interruptCurrentNotification();
     rosalila()->graphics->notification_handler.notifications.push_back(
@@ -810,24 +813,30 @@ void STG::uploadErrorLoop()
 
     while(true)
     {
-        if(rosalila()->receiver->isPressed("a"))
-        {
-            break;
-        }
-        rosalila()->graphics->draw2DImage
-        (   image_upload_error,
-            image_upload_error->getWidth(),image_upload_error->getHeight(),
-            0,0,
-            1.0,
-            0.0,
-            false,
-            0,0,
-            Color(255,255,255,current_training_transparency),
-            0,0,
-            false,
-            FlatShadow());
+      if(rosalila()->receiver->isPressed("a"))
+      {
+          return true;
+      }
 
-        rosalila()->update();
+      if(rosalila()->receiver->isPressed("b"))
+      {
+          return false;
+      }
+
+      rosalila()->graphics->draw2DImage
+      (   image_upload_error,
+          image_upload_error->getWidth(),image_upload_error->getHeight(),
+          0,0,
+          1.0,
+          0.0,
+          false,
+          0,0,
+          Color(255,255,255,current_training_transparency),
+          0,0,
+          false,
+          FlatShadow());
+
+      rosalila()->update();
     }
 }
 

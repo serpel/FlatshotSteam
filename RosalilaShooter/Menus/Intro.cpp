@@ -4,22 +4,17 @@ void intro()
 {
     Image* image = rosalila()->graphics->getTexture(assets_directory+"menu/rosalila.png");
     Image* image2 = rosalila()->graphics->getTexture(assets_directory+"menu/flatshot.png");
-
     int current_fade_in=0;
-
     rosalila()->graphics->notification_handler.notifications.push_back(
         new Notification(getLoadingImage(), rosalila()->graphics->screen_width/2-getLoadingImage()->getWidth()/2,
                             rosalila()->graphics->screen_height,
                             rosalila()->graphics->screen_height-getLoadingImage()->getHeight(),
                             999999));
-
     int frames = 0;
-
     if(!rosalila()->api_integrator->isUsingApi())
     {
         rosalila()->graphics->notification_handler.interruptCurrentNotification();
     }
-
     while(true)
     {
         if(rosalila()->api_integrator->getState()!="loading" && frames > 180)
@@ -53,7 +48,10 @@ void intro()
             false,
             FlatShadow());
 
-rosalila()->graphics->drawText(rosalila()->utility->toString(rosalila()->api_integrator->getLeaderboardDownloadPercentage())+"%", 20, 20, false, false);
+        if(rosalila()->api_integrator->isUsingApi())
+        {
+          rosalila()->graphics->drawText(rosalila()->utility->toString(rosalila()->api_integrator->getLeaderboardDownloadPercentage())+"%", 20, 20, false, false);
+        }
 
         current_fade_in+=2;
         if(current_fade_in>255)
@@ -63,7 +61,7 @@ rosalila()->graphics->drawText(rosalila()->utility->toString(rosalila()->api_int
 
         rosalila()->update();
     }
-
+cout<<"xx"<<endl;
     int current_background_transparency=0;
 
     frames = 0;
