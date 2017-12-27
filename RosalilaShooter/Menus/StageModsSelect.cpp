@@ -110,7 +110,7 @@ void stageModsSelect()
 
                 Stage*stage=new Stage();
                 stage->loadFromXML(stage_names[current_stage],true);
-                Player*player=new Player("Triangle",10,intro_input,replay_input);
+                Player*player=new Player("Triangle",10,intro_input,replay_input, game_mode);
                 Enemy*enemy=new Enemy(stage_names[current_stage],player,20,true);
                 rosalila()->api_integrator->setCurrentControllerActionSet("InGameControls");
                 STG*stg=new STG(player,enemy,stage,game_mode,current_player_best_score);

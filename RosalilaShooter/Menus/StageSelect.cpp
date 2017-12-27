@@ -294,42 +294,82 @@ void stageSelect()
 		#ifdef STEAM
         Leaderboard* current_leaderboard = rosalila()->api_integrator->getLeaderboard(stage_names[current_stage]);
 
+
+
+        if(rosalila()->receiver->isDown("2"))
+        {
+          if(!current_leaderboard)
+          {
+            rosalila()->api_integrator->findLeaderboard(stage_names[current_stage]);
+
+            rosalila()->graphics->notification_handler.notifications.push_back(
+                new Notification(getLoadingImage(), rosalila()->graphics->screen_width/2-getLoadingImage()->getWidth()/2,
+                                    rosalila()->graphics->screen_height,
+                                    rosalila()->graphics->screen_height-getLoadingImage()->getHeight(),
+                                    999999));
+
+            while(rosalila()->api_integrator->getState()=="loading")
+            {
+              rosalila()->update();
+            }
+            rosalila()->graphics->notification_handler.interruptCurrentNotification();
+
+            current_leaderboard = rosalila()->api_integrator->getLeaderboard(stage_names[current_stage]);
+          }
+            if(current_long_press_down == 0 || (current_long_press_down > 40 && current_long_press_down % 5 ==0))
+            {
+                rosalila()->sound->playSound("Menu.down",0,0,0,0);
+                entry_navigator++;
+                line_width=0;
+                if(entry_navigator > (int)current_leaderboard->friends_entries.size())
+                {
+                    entry_navigator = current_leaderboard->friends_entries.size();
+                }
+            }
+            current_long_press_down++;
+        }else
+        {
+            current_long_press_down = 0;
+        }
+        if(rosalila()->receiver->isDown("8"))
+        {
+          if(!current_leaderboard)
+          {
+            rosalila()->api_integrator->findLeaderboard(stage_names[current_stage]);
+
+            rosalila()->graphics->notification_handler.notifications.push_back(
+                new Notification(getLoadingImage(), rosalila()->graphics->screen_width/2-getLoadingImage()->getWidth()/2,
+                                    rosalila()->graphics->screen_height,
+                                    rosalila()->graphics->screen_height-getLoadingImage()->getHeight(),
+                                    999999));
+
+            while(rosalila()->api_integrator->getState()=="loading")
+            {
+              rosalila()->update();
+            }
+
+            rosalila()->graphics->notification_handler.interruptCurrentNotification();
+            current_leaderboard = rosalila()->api_integrator->getLeaderboard(stage_names[current_stage]);
+          }
+            if(current_long_press_up == 0 || (current_long_press_up > 40 && current_long_press_up % 5 ==0))
+            {
+                rosalila()->sound->playSound("Menu.up",0,0,0,0);
+                entry_navigator--;
+                line_width=0;
+                if(entry_navigator<-6)
+                {
+                   entry_navigator=-6;
+                }
+            }
+            current_long_press_up++;
+        }else
+        {
+            current_long_press_up = 0;
+        }
+
+
         if(current_leaderboard)
         {
-            if(rosalila()->receiver->isDown("2"))
-            {
-                if(current_long_press_down == 0 || (current_long_press_down > 40 && current_long_press_down % 5 ==0))
-                {
-                    rosalila()->sound->playSound("Menu.down",0,0,0,0);
-                    entry_navigator++;
-                    line_width=0;
-                    if(entry_navigator > (int)current_leaderboard->friends_entries.size())
-                    {
-                        entry_navigator = current_leaderboard->friends_entries.size();
-                    }
-                }
-                current_long_press_down++;
-            }else
-            {
-                current_long_press_down = 0;
-            }
-            if(rosalila()->receiver->isDown("8"))
-            {
-                if(current_long_press_up == 0 || (current_long_press_up > 40 && current_long_press_up % 5 ==0))
-                {
-                    rosalila()->sound->playSound("Menu.up",0,0,0,0);
-                    entry_navigator--;
-                    line_width=0;
-                    if(entry_navigator<-6)
-                    {
-                       entry_navigator=-6;
-                    }
-                }
-                current_long_press_up++;
-            }else
-            {
-                current_long_press_up = 0;
-            }
 
             target_bottom_menu_y = rosalila()->graphics->screen_height/2 - current_leaderboard->friends_entries.size()*entry_height/2;
 
@@ -523,7 +563,7 @@ void stageSelect()
 
                 Stage*stage=new Stage();
                 stage->loadFromXML(stage_names[current_stage],false);
-                Player*player=new Player("Triangle",10,intro_input,replay_input);
+                Player*player=new Player("Triangle",10,intro_input,replay_input, game_mode);
                 Enemy*enemy=new Enemy(stage_names[current_stage],player,20,false);
                 rosalila()->api_integrator->setCurrentControllerActionSet("InGameControls");
                 STG*stg=new STG(player,enemy,stage,game_mode,current_player_best_score);
@@ -560,36 +600,36 @@ void stageSelect()
 
                     if(total_clears >= 1)
                     {
-                        rosalila()->api_integrator->unlockAchievement("Clear1");
+                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Clear1");
                     }
                     if(total_clears >= 10)
                     {
-                        rosalila()->api_integrator->unlockAchievement("Clear2");
+                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Clear2");
                     }
                     if(total_clears >= 25)
                     {
-                        rosalila()->api_integrator->unlockAchievement("Clear3");
+                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Clear3");
                     }
                     if(total_clears >= 59)
                     {
-                        rosalila()->api_integrator->unlockAchievement("Clear4");
+                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Clear4");
                     }
 
                     if(total_perfects >= 1)
                     {
-                        rosalila()->api_integrator->unlockAchievement("Perfect1");
+                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Perfect1");
                     }
                     if(total_perfects >= 10)
                     {
-                        rosalila()->api_integrator->unlockAchievement("Perfect2");
+                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Perfect2");
                     }
                     if(total_perfects >= 25)
                     {
-                        rosalila()->api_integrator->unlockAchievement("Perfect3");
+                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Perfect3");
                     }
                     if(total_perfects >= 59)
                     {
-                        rosalila()->api_integrator->unlockAchievement("Perfect4");
+                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Perfect4");
                     }
                 }
 

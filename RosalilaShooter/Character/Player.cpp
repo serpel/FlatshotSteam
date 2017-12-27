@@ -1,7 +1,8 @@
 #include "Player.h"
 
-Player::Player(std::string name,int sound_channel_base,vector<string> intro_input, vector<string> replay_input)
+Player::Player(std::string name,int sound_channel_base,vector<string> intro_input, vector<string> replay_input, string game_mode)
 {
+  this->game_mode = game_mode;
     //Setting up the other variables
     this->name=name;
     this->directory="chars/"+name+"/";
@@ -295,23 +296,23 @@ void Player::inputControl()
             if(!isOnIntro())
             {
                 int counter = rosalila()->api_integrator->getStat("TotalCharges") + 1;
-                rosalila()->api_integrator->setStat("TotalCharges",counter);
+                if(game_mode!="replay")rosalila()->api_integrator->setStat("TotalCharges",counter);
 
                 if(counter >= 3)
                 {
-                    rosalila()->api_integrator->unlockAchievement("Charge1");
+                    if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Charge1");
                 }
                 if(counter >= 20)
                 {
-                    rosalila()->api_integrator->unlockAchievement("Charge2");
+                    if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Charge2");
                 }
                 if(counter >= 100)
                 {
-                    rosalila()->api_integrator->unlockAchievement("Charge3");
+                    if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Charge3");
                 }
                 if(counter >= 200)
                 {
-                    rosalila()->api_integrator->unlockAchievement("Charge4");
+                    if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Charge4");
                 }
             }
 

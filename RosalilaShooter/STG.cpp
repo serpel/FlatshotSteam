@@ -238,23 +238,23 @@ void STG::logic()
                             {
 
                                 int counter = rosalila()->api_integrator->getStat("TotalParryDashDestroys") + 1;
-                                rosalila()->api_integrator->setStat("TotalParryDashDestroys",counter);
+                                if(game_mode!="replay")rosalila()->api_integrator->setStat("TotalParryDashDestroys",counter);
 
                                 if(counter >= 15)
                                 {
-                                    rosalila()->api_integrator->unlockAchievement("ParryDash1");
+                                    if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("ParryDash1");
                                 }
                                 if(counter >= 50)
                                 {
-                                    rosalila()->api_integrator->unlockAchievement("ParryDash2");
+                                    if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("ParryDash2");
                                 }
                                 if(counter >= 200)
                                 {
-                                    rosalila()->api_integrator->unlockAchievement("ParryDash3");
+                                    if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("ParryDash3");
                                 }
                                 if(counter >= 500)
                                 {
-                                    rosalila()->api_integrator->unlockAchievement("ParryDash4");
+                                    if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("ParryDash4");
                                 }
 
                                 parry_dash_count++;
@@ -278,23 +278,23 @@ void STG::logic()
                                 if(player->invulnerable_frames_left==15)
                                 {
                                     int counter = rosalila()->api_integrator->getStat("TotalParries") + 1;
-                                    rosalila()->api_integrator->setStat("TotalParries",counter);
+                                    if(game_mode!="replay")rosalila()->api_integrator->setStat("TotalParries",counter);
 
                                     if(counter >= 3)
                                     {
-                                        rosalila()->api_integrator->unlockAchievement("Parry1");
+                                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Parry1");
                                     }
                                     if(counter >= 20)
                                     {
-                                        rosalila()->api_integrator->unlockAchievement("Parry2");
+                                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Parry2");
                                     }
                                     if(counter >= 100)
                                     {
-                                        rosalila()->api_integrator->unlockAchievement("Parry3");
+                                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Parry3");
                                     }
                                     if(counter >= 250)
                                     {
-                                        rosalila()->api_integrator->unlockAchievement("Parry4");
+                                        if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("Parry4");
                                     }
                                 }
                                 parry_count++;
@@ -382,23 +382,23 @@ void STG::logic()
                                     if(!player->isOnIntro())
                                     {
                                         int counter = rosalila()->api_integrator->getStat("TotalChargeBulletDestroys") + 1;
-                                        rosalila()->api_integrator->setStat("TotalChargeBulletDestroys",counter);
+                                        if(game_mode!="replay")rosalila()->api_integrator->setStat("TotalChargeBulletDestroys",counter);
 
                                         if(counter >= 300)
                                         {
-                                            rosalila()->api_integrator->unlockAchievement("ChargeDestroy1");
+                                            if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("ChargeDestroy1");
                                         }
                                         if(counter >= 1000)
                                         {
-                                            rosalila()->api_integrator->unlockAchievement("ChargeDestroy2");
+                                            if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("ChargeDestroy2");
                                         }
                                         if(counter >= 5000)
                                         {
-                                            rosalila()->api_integrator->unlockAchievement("ChargeDestroy3");
+                                            if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("ChargeDestroy3");
                                         }
                                         if(counter >= 10000)
                                         {
-                                            rosalila()->api_integrator->unlockAchievement("ChargeDestroy4");
+                                            if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("ChargeDestroy4");
                                         }
 
                                         charge_destroy_count++;
@@ -721,19 +721,19 @@ bool STG::enemyWon()
 void STG::win()
 {
     int old_clears = rosalila()->api_integrator->getStat(stage->name+"Clears");
-    rosalila()->api_integrator->setStat(stage->name+"Clears",old_clears+1);
+    if(game_mode!="replay")rosalila()->api_integrator->setStat(stage->name+"Clears",old_clears+1);
 
     if(player->hp == player->max_hp)
     {
         int old_perfects = rosalila()->api_integrator->getStat(stage->name+"Perfects");
-        rosalila()->api_integrator->setStat(stage->name+"Perfects",old_perfects+1);
+        if(game_mode!="replay")rosalila()->api_integrator->setStat(stage->name+"Perfects",old_perfects+1);
     }
 
     setPlayerWon(true);
     setGameOver(true);
     setIsFirstWin(old_clears==0);
 
-    rosalila()->api_integrator->unlockAchievement("B");
+    if(game_mode!="replay")rosalila()->api_integrator->unlockAchievement("B");
     double milliseconds = SDL_GetTicks()-initial_ticks;
     double hp_penalty = (1.0 + ((double)player->max_hp-(double)player->hp)/100.0);
     score = milliseconds * hp_penalty;
@@ -762,7 +762,7 @@ void STG::uploadScore()
     api_state = "uploading score";
     rosalila()->utility->writeLogLine("uploading score");
 
-    rosalila()->api_integrator->setScore(stage->name, score);
+    if(game_mode!="replay")rosalila()->api_integrator->setScore(stage->name, score);
 
     rosalila()->graphics->notification_handler.notifications.push_back(
         new Notification(getLoadingImage(), rosalila()->graphics->screen_width/2-getLoadingImage()->getWidth()/2,

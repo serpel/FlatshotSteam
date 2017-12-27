@@ -14,6 +14,7 @@ class Player:public Character
 {
 public:
     //Slow bar variables
+    string game_mode;
     Image*slow_bar;
     int slow_decrement;
     int slow_increment;
@@ -65,7 +66,7 @@ public:
     vector<string> replay_input;
     vector<string> replay_storage;
 
-    Player(std::string name,int sound_channel_base,vector<string>intro_input,vector<string>replay_input);
+    Player(std::string name,int sound_channel_base,vector<string>intro_input,vector<string>replay_input, string game_mode);
     ~Player();
     void loadFromXML();
     void loadPlayerFromXML();

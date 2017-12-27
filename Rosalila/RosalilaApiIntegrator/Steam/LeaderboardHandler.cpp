@@ -51,19 +51,19 @@ LeaderboardHandler::LeaderboardHandler()
     }
 
     downloaded_leaderboards = 0;
-    current_leaderboard_count = 0;
-    findLeaderboard(leaderboard_names[downloaded_leaderboards].c_str());
+    //findLeaderboard(leaderboard_names[downloaded_leaderboards].c_str());
 }
 
 void LeaderboardHandler::findLeaderboard( const char *pchLeaderboardName )
 {
-    rosalila()->utility->writeLogLine("Finding Leaderboard");
-    this->state = "loading";
-    leaderboards[pchLeaderboardName]=new Leaderboard();
-    leaderboards_to_download_count+=3;
-    CCallResult<LeaderboardHandler, LeaderboardFindResult_t> *find_leaderboard_callback = new CCallResult<LeaderboardHandler, LeaderboardFindResult_t>();
-    SteamAPICall_t hSteamAPICall = SteamUserStats()->FindLeaderboard(pchLeaderboardName);
-    find_leaderboard_callback->Set(hSteamAPICall, this, &LeaderboardHandler::onFindLeaderboard);
+  current_leaderboard_count = 0;
+  rosalila()->utility->writeLogLine("Finding Leaderboard");
+  this->state = "loading";
+  leaderboards[pchLeaderboardName]=new Leaderboard();
+  leaderboards_to_download_count+=3;
+  CCallResult<LeaderboardHandler, LeaderboardFindResult_t> *find_leaderboard_callback = new CCallResult<LeaderboardHandler, LeaderboardFindResult_t>();
+  SteamAPICall_t hSteamAPICall = SteamUserStats()->FindLeaderboard(pchLeaderboardName);
+  find_leaderboard_callback->Set(hSteamAPICall, this, &LeaderboardHandler::onFindLeaderboard);
 }
 
 void LeaderboardHandler::downloadEntryAttachment(LeaderboardEntry* leaderboard_entry)
@@ -175,6 +175,8 @@ void LeaderboardHandler::onDownloadTopScores(LeaderboardScoresDownloaded_t *pCal
 
     //if(state != "error" && leaderboards_to_download_count == 0)
     //    state = "finished";
+
+    /*
     current_leaderboard_count++;
     if(current_leaderboard_count>=3)
     {
@@ -183,6 +185,14 @@ void LeaderboardHandler::onDownloadTopScores(LeaderboardScoresDownloaded_t *pCal
       if(downloaded_leaderboards<(int)leaderboard_names.size())
         findLeaderboard(leaderboard_names[downloaded_leaderboards].c_str());
       if(state != "error" && downloaded_leaderboards>=leaderboard_names.size())
+          state = "finished";
+    }
+    */
+    current_leaderboard_count++;
+    if(current_leaderboard_count>=3)
+    {
+      current_leaderboard_count=0;
+      if(state != "error")
           state = "finished";
     }
 }
@@ -233,6 +243,8 @@ void LeaderboardHandler::onDownloadNearScores(LeaderboardScoresDownloaded_t *pCa
 
     //if(state != "error" && leaderboards_to_download_count == 0)
     //    state = "finished";
+
+    /*
     current_leaderboard_count++;
     if(current_leaderboard_count>=3)
     {
@@ -241,6 +253,15 @@ void LeaderboardHandler::onDownloadNearScores(LeaderboardScoresDownloaded_t *pCa
       if(downloaded_leaderboards<(int)leaderboard_names.size())
         findLeaderboard(leaderboard_names[downloaded_leaderboards].c_str());
       if(state != "error" && downloaded_leaderboards>=leaderboard_names.size())
+          state = "finished";
+    }
+    */
+
+    current_leaderboard_count++;
+    if(current_leaderboard_count>=3)
+    {
+      current_leaderboard_count=0;
+      if(state != "error")
           state = "finished";
     }
 }
@@ -286,6 +307,8 @@ void LeaderboardHandler::onDownloadFriendsScores(LeaderboardScoresDownloaded_t *
 
     //if(state != "error" && leaderboards_to_download_count == 0)
     //    state = "finished";
+
+    /*
     current_leaderboard_count++;
     if(current_leaderboard_count>=3)
     {
@@ -294,6 +317,15 @@ void LeaderboardHandler::onDownloadFriendsScores(LeaderboardScoresDownloaded_t *
       if(downloaded_leaderboards<(int)leaderboard_names.size())
         findLeaderboard(leaderboard_names[downloaded_leaderboards].c_str());
       if(state != "error" && downloaded_leaderboards>=leaderboard_names.size())
+          state = "finished";
+    }
+    */
+
+    current_leaderboard_count++;
+    if(current_leaderboard_count>=3)
+    {
+      current_leaderboard_count=0;
+      if(state != "error")
           state = "finished";
     }
 }
