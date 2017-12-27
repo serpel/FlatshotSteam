@@ -1,3 +1,5 @@
+#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sstream>
