@@ -5,7 +5,7 @@ SOURCES = main.cpp include/dirent.cpp $(ROSALILA_SHOOTER_SOURCES) $(ROSALILA_SOU
 LIBRARIES = SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib SDL2test.lib steam_api.lib opengl32.lib
 
 build:
- $(CC) $(CFLAGS) $(SOURCES) /I include /link /LIBPATH:lib $(LIBRARIES) /SUBSYSTEM:CONSOLE
+ $(CC) $(CFLAGS) $(SOURCES) /I include /link /LIBPATH:lib $(LIBRARIES) /SUBSYSTEM:windows
 
 clean:
  del *.obj

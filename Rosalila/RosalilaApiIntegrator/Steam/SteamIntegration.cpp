@@ -25,7 +25,8 @@ void steamInit()
     leaderboard_handler = new LeaderboardHandler();
     ugc_handler = new UGCHandler();
 
-
+    is_using_steam_controller = false;
+/*
     is_using_steam_controller = true;
     if(!SteamController()->Init())
     {
@@ -48,7 +49,7 @@ void steamInit()
             is_using_steam_controller = false;
         }
     }
-
+*/
     if(steamIsUsingSteamController())
     {
         //Action sets
@@ -240,7 +241,8 @@ string steamGetState()
 
 bool steamIsUsingSteamController()
 {
-    return is_using_steam_controller;
+  return false;
+    //return is_using_steam_controller;
 }
 
 void steamShowControllerBindingPanel()
