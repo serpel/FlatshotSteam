@@ -316,17 +316,17 @@ void stageSelect()
 
             current_leaderboard = rosalila()->api_integrator->getLeaderboard(stage_names[current_stage]);
           }
-            if(current_long_press_down == 0 || (current_long_press_down > 40 && current_long_press_down % 5 ==0))
-            {
-                rosalila()->sound->playSound("Menu.down",0,0,0,0);
-                entry_navigator++;
-                line_width=0;
-                if(entry_navigator > (int)current_leaderboard->friends_entries.size())
-                {
-                    entry_navigator = current_leaderboard->friends_entries.size();
-                }
-            }
-            current_long_press_down++;
+          if(current_long_press_down == 0 || (current_long_press_down > 40 && current_long_press_down % 5 ==0))
+          {
+              rosalila()->sound->playSound("Menu.down",0,0,0,0);
+              entry_navigator++;
+              line_width=0;
+              if(entry_navigator > (int)current_leaderboard->friends_entries.size())
+              {
+                  entry_navigator = current_leaderboard->friends_entries.size();
+              }
+          }
+          current_long_press_down++;
         }else
         {
             current_long_press_down = 0;
