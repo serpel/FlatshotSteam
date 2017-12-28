@@ -95,7 +95,7 @@ void steamInit()
 
 bool steamIsUsingApi()
 {
-    return is_using_steam && SteamUser();
+    return is_using_steam && SteamUser()->BLoggedOn();
 }
 
 void steamSetCurrentControllerActionSet(string action_set_name)

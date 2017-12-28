@@ -296,7 +296,7 @@ void stageSelect()
 
 
 
-        if(rosalila()->receiver->isDown("2"))
+        if(rosalila()->api_integrator->isUsingApi() && rosalila()->receiver->isDown("2"))
         {
           if(!current_leaderboard)
           {
@@ -312,11 +312,22 @@ void stageSelect()
             {
               rosalila()->update();
             }
+
             rosalila()->graphics->notification_handler.interruptCurrentNotification();
 
-            current_leaderboard = rosalila()->api_integrator->getLeaderboard(stage_names[current_stage]);
+            if(rosalila()->api_integrator->getState()=="error")
+            {
+              rosalila()->graphics->notification_handler.notifications.push_back(
+                  new Notification(getErrorImage(), rosalila()->graphics->screen_width/2-getErrorImage()->getWidth()/2,
+                                      rosalila()->graphics->screen_height,
+                                      rosalila()->graphics->screen_height-getErrorImage()->getHeight(),
+                                      getNotificationDuration()));
+            }else
+            {
+              current_leaderboard = rosalila()->api_integrator->getLeaderboard(stage_names[current_stage]);
+            }
           }
-          if(current_long_press_down == 0 || (current_long_press_down > 40 && current_long_press_down % 5 ==0))
+          if(current_leaderboard && (current_long_press_down == 0 || (current_long_press_down > 40 && current_long_press_down % 5 ==0)))
           {
               rosalila()->sound->playSound("Menu.down",0,0,0,0);
               entry_navigator++;
@@ -331,7 +342,7 @@ void stageSelect()
         {
             current_long_press_down = 0;
         }
-        if(rosalila()->receiver->isDown("8"))
+        if(rosalila()->api_integrator->isUsingApi() && rosalila()->receiver->isDown("8"))
         {
           if(!current_leaderboard)
           {
@@ -349,9 +360,20 @@ void stageSelect()
             }
 
             rosalila()->graphics->notification_handler.interruptCurrentNotification();
-            current_leaderboard = rosalila()->api_integrator->getLeaderboard(stage_names[current_stage]);
+
+            if(rosalila()->api_integrator->getState()=="error")
+            {
+              rosalila()->graphics->notification_handler.notifications.push_back(
+                  new Notification(getErrorImage(), rosalila()->graphics->screen_width/2-getErrorImage()->getWidth()/2,
+                                      rosalila()->graphics->screen_height,
+                                      rosalila()->graphics->screen_height-getErrorImage()->getHeight(),
+                                      getNotificationDuration()));
+            }else
+            {
+              current_leaderboard = rosalila()->api_integrator->getLeaderboard(stage_names[current_stage]);
+            }
           }
-            if(current_long_press_up == 0 || (current_long_press_up > 40 && current_long_press_up % 5 ==0))
+            if(current_leaderboard && (current_long_press_up == 0 || (current_long_press_up > 40 && current_long_press_up % 5 ==0)))
             {
                 rosalila()->sound->playSound("Menu.up",0,0,0,0);
                 entry_navigator--;

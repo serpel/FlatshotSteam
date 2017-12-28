@@ -53,7 +53,7 @@ public:
     ~STG();
     bool isOutOfBounds(int pos_x,int pos_y);
     void mainLoop();
-    void logic();
+    bool logic();
     void render();
     void deletePatterns();
     void checkCharacterOutOfBounds();

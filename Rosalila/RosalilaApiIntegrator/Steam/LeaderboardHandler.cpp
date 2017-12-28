@@ -105,27 +105,23 @@ void LeaderboardHandler::storeLeaderboardUGC(string leaderboard_name, char* atta
 
 void LeaderboardHandler::onFindLeaderboard( LeaderboardFindResult_t *pCallback,	bool bIOFailure )
 {
-    if (bIOFailure)
+    if (bIOFailure || pCallback->m_bLeaderboardFound==0)
     {
         rosalila()->utility->writeLogLine("Leaderboard could not be found");
         this->state = "error";
         return;
     }
     rosalila()->utility->writeLogLine("Leaderboard found");
-
     steam_leaderboards[SteamUserStats()->GetLeaderboardName(pCallback->m_hSteamLeaderboard)] = pCallback->m_hSteamLeaderboard;
-
     SteamAPICall_t hSteamAPICall_top = SteamUserStats()->DownloadLeaderboardEntries(
         steam_leaderboards[SteamUserStats()->GetLeaderboardName(pCallback->m_hSteamLeaderboard)], k_ELeaderboardDataRequestGlobal, 1, 3);
     SteamAPICall_t hSteamAPICall_near = SteamUserStats()->DownloadLeaderboardEntries(
         steam_leaderboards[SteamUserStats()->GetLeaderboardName(pCallback->m_hSteamLeaderboard)], k_ELeaderboardDataRequestGlobalAroundUser, -1, 1);
     SteamAPICall_t hSteamAPICall_friends = SteamUserStats()->DownloadLeaderboardEntries(
         steam_leaderboards[SteamUserStats()->GetLeaderboardName(pCallback->m_hSteamLeaderboard)], k_ELeaderboardDataRequestFriends, -1, -1);
-
     CCallResult<LeaderboardHandler, LeaderboardScoresDownloaded_t> *download_top_scores_callback = new CCallResult<LeaderboardHandler, LeaderboardScoresDownloaded_t>();
     CCallResult<LeaderboardHandler, LeaderboardScoresDownloaded_t> *download_near_scores_callback = new CCallResult<LeaderboardHandler, LeaderboardScoresDownloaded_t>();
     CCallResult<LeaderboardHandler, LeaderboardScoresDownloaded_t> *download_friends_scores_callback = new CCallResult<LeaderboardHandler, LeaderboardScoresDownloaded_t>();
-
     download_top_scores_callback->Set(hSteamAPICall_top, this,
         &LeaderboardHandler::onDownloadTopScores);
     download_near_scores_callback->Set(hSteamAPICall_near, this,
@@ -144,15 +140,12 @@ void LeaderboardHandler::onDownloadTopScores(LeaderboardScoresDownloaded_t *pCal
         this->state="error";
         return;
     }
-
     rosalila()->utility->writeLogLine("Top scores downloaded");
 
     //int m_nLeaderboardEntries = std::min(pCallback->m_cEntryCount, 1000);
     int m_nLeaderboardEntries = pCallback->m_cEntryCount;
     LeaderboardEntry_t *m_leaderboardEntries = new LeaderboardEntry_t[m_nLeaderboardEntries];
-
     vector<LeaderboardEntry*> leaderboard_top_entries;
-
     for (int index = 0; index < m_nLeaderboardEntries; index++)
     {
         SteamUserStats()->GetDownloadedLeaderboardEntry(
@@ -170,7 +163,6 @@ void LeaderboardHandler::onDownloadTopScores(LeaderboardScoresDownloaded_t *pCal
 
         entries_attachments[leaderboard_entry]=(&m_leaderboardEntries[index])->m_hUGC;
     }
-
     leaderboards[SteamUserStats()->GetLeaderboardName(pCallback->m_hSteamLeaderboard)]->top_entries = leaderboard_top_entries;
 
     //if(state != "error" && leaderboards_to_download_count == 0)

@@ -185,7 +185,12 @@ void STG::mainLoop()
 
         render();
 
-        logic();
+        if(!logic())
+        {
+          player->exit();
+          rosalila()->sound->playSound(std::string("Menu.back"), 1, 0, 0, false);
+          break;
+        }
 
 //        rosalila()->receiver->isKeyDown(SDLK_z)
 
@@ -211,7 +216,7 @@ void STG::mainLoop()
     }
 }
 
-void STG::logic()
+bool STG::logic()
 {
     float distance_x=enemy->x - player->x;
     float distance_y=enemy->y - player->y;
@@ -447,6 +452,8 @@ void STG::logic()
             bool retry = uploadErrorLoop();
             if(retry)
               uploadScore();
+            else
+              return false;
         }
     }
     if(api_state == "uploading replay")
@@ -462,6 +469,8 @@ void STG::logic()
           bool retry = uploadErrorLoop();
           if(retry)
             uploadReplay();
+          else
+            return false;
         }
     }
 
@@ -485,11 +494,14 @@ void STG::logic()
           bool retry = uploadErrorLoop();
           if(retry)
             findLeaderboard();
+          else
+            return false;
         }
     }
 
     if(!getGameOver())
         frame++;
+    return true;
 }
 
 void STG::render()
