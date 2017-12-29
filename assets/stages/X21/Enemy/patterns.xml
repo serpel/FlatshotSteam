@@ -1,0 +1,27 @@
+<PatternsFile>
+	<Type name="A">
+
+    <Pattern bullet="basic" velocity="7" max_velocity="7" a_frequency="10" cooldown="29" duration="1000" aim_player="yes" angle="0" random_angle="40" homing="yes">
+      <Modifier at="80" homing="no"/>
+    </Pattern>
+
+    <Pattern bullet="square" velocity="0" max_velocity="3" acceleration="1" a_frequency="5" cooldown="14" duration="1000" aim_player="yes" angle="0" random_angle="40" homing="yes" undestructable="yes">
+      <Modifier at="50" homing="no"/>
+    </Pattern>
+
+    <Pattern bullet="basic" velocity="1" max_velocity="5" a_frequency="10" cooldown="75" duration="1000" aim_player="yes" angle="170" random_angle="10" homing="no">
+      <Modifier at="35" acceleration="-3"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="1" max_velocity="5" a_frequency="10" cooldown="75" duration="1000" aim_player="yes" angle="170" random_angle="10" homing="no">
+      <Modifier at="35" acceleration="-3"/>
+    </Pattern>
+    <Repeat amount="9" acceleration="1">
+      <Pattern bullet="basic mute" acceleration="1" velocity="1" max_velocity="5" a_frequency="10" cooldown="75" duration="1000" aim_player="yes" angle="170" random_angle="10" homing="no">
+        <Modifier at="35" acceleration="-3"/>
+      </Pattern>
+      <Pattern bullet="basic mute" acceleration="1" velocity="1" max_velocity="5" a_frequency="10" cooldown="75" duration="1000" aim_player="yes" angle="170" random_angle="10" homing="no">
+        <Modifier at="35" acceleration="-3"/>
+      </Pattern>
+    </Repeat>
+	</Type>
+</PatternsFile>

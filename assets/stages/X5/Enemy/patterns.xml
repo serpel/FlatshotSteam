@@ -1,0 +1,12 @@
+<PatternsFile>
+	<Type name="A">
+    <Repeat amount="50" startup="2">
+      <Pattern bullet="square" undestructable="yes" velocity="20" startup="0" cooldown="300" aim_player="yes"/>
+    </Repeat>
+
+    <Repeat amount="20" startup="4">
+      <Pattern bullet="basic" velocity="10" startup="100" cooldown="300" aim_player="yes" angle="-30" random_angle="60"/>
+      <Pattern bullet="basic mute" velocity="10" startup="100" cooldown="300" aim_player="yes" angle="-30" random_angle="60"/>
+    </Repeat>
+	</Type>
+</PatternsFile>

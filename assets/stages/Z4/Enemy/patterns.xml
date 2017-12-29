@@ -1,0 +1,16 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="basic" velocity="30" startup="10" cooldown="2" aim_player="yes" angle="-10"/>
+    <Pattern bullet="basic mute" velocity="30" startup="10" cooldown="2" aim_player="yes"/>
+    <Pattern bullet="basic mute" velocity="30" startup="10" cooldown="2" aim_player="yes" angle="10"/>
+    <Pattern bullet="square" undestructable="yes" velocity="4" startup="0" cooldown="10" aim_player="yes" angle="-20" random_angle="40"/>
+	</Type>
+	<Type name="B">
+    <Pattern bullet="basic" velocity="30" startup="10" cooldown="2" aim_player="yes" angle="-2"/>
+    <Pattern bullet="basic mute" velocity="30" startup="10" cooldown="2" aim_player="yes" angle="2"/>
+	</Type>
+	<Type name="C">
+    <Pattern bullet="basic" velocity="30" startup="10" cooldown="2" aim_player="yes" angle="-5"/>
+    <Pattern bullet="basic mute" velocity="30" startup="10" cooldown="2" aim_player="yes" angle="5"/>
+	</Type>
+</PatternsFile>

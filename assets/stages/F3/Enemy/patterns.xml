@@ -1,0 +1,30 @@
+<PatternsFile>
+	<Type name="A">
+
+    <Pattern bullet="basic" velocity="0" cooldown="119" aim_player="yes">
+      <Modifier at="5" velocity="8"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" cooldown="119" aim_player="yes">
+      <Modifier at="10" velocity="8"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" cooldown="119" aim_player="yes">
+      <Modifier at="15" velocity="8"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" cooldown="119" aim_player="yes">
+      <Modifier at="20" velocity="8"/>
+    </Pattern>
+
+    <Pattern bullet="square" undestructable="yes" velocity="8" cooldown="59" offset_x="-1000"/>
+    <Pattern bullet="square mute" undestructable="yes" velocity="8" cooldown="59" offset_y="100" offset_x="-1000"/>
+    <Pattern bullet="square mute" undestructable="yes" velocity="8" cooldown="59" offset_y="200" offset_x="-1000"/>
+    <Pattern bullet="square mute" undestructable="yes" velocity="8" cooldown="59" offset_y="-100" offset_x="-1000"/>
+    <Pattern bullet="square mute" undestructable="yes" velocity="8" cooldown="59" offset_y="-200" offset_x="-1000"/>
+
+    <Pattern bullet="square" undestructable="yes" velocity="8" startup="30" cooldown="59" offset_y="50" offset_x="-1000"/>
+    <Pattern bullet="square mute" undestructable="yes" velocity="8" startup="30" cooldown="59" offset_y="150" offset_x="-1000"/>
+    <Pattern bullet="square mute" undestructable="yes" velocity="8" startup="30" cooldown="59" offset_y="250" offset_x="-1000"/>
+    <Pattern bullet="square mute" undestructable="yes" velocity="8" startup="30" cooldown="59" offset_y="-50" offset_x="-1000"/>
+    <Pattern bullet="square mute" undestructable="yes" velocity="8" startup="30" cooldown="59" offset_y="-150" offset_x="-1000"/>
+    <Pattern bullet="square mute" undestructable="yes" velocity="8" startup="30" cooldown="59" offset_y="-250" offset_x="-1000"/>
+	</Type>
+</PatternsFile>

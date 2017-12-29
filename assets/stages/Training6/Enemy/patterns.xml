@@ -1,0 +1,7 @@
+<PatternsFile>
+	<Type name="A">
+    <Repeat amount="6" startup="5">
+      <Pattern bullet="basic" velocity="15" animation_velocity="5" startup="0" cooldown="150" aim_player="yes"/>
+    </Repeat>
+	</Type>
+</PatternsFile>

@@ -1,0 +1,10 @@
+<ModifiersFile>
+	<Modifier at="0" velocity="5" angle="180"/>
+	<Modifier at="125" velocity="1" angle_change="5"/>
+	<Modifier at="200" velocity="5" angle="90" angle_change="0"/>
+	<Modifier at="300" velocity="1" angle_change="5"/>
+	<Modifier at="400" velocity="5" angle="-90" angle_change="0"/>
+	<Modifier at="500" velocity="1" angle_change="5"/>
+	<Modifier at="599" iterator="200"/>
+
+</ModifiersFile>

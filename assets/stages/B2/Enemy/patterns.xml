@@ -1,0 +1,36 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="basic" velocity="10" angle_change="5" startup="0" cooldown="80" aim_player="yes">
+      <Modifier at="100" aim_player="yes" angle_change="0" angle="0"/>
+    </Pattern>
+    <Repeat amount="8" angle="40">
+      <Pattern bullet="basic mute" velocity="10" angle="40" angle_change="5" startup="0" cooldown="80" aim_player="yes">
+        <Modifier at="100" aim_player="yes" angle_change="0" angle="0"/>
+      </Pattern>
+    </Repeat>
+    <Pattern bullet="basic" velocity="10" angle_change="5" startup="10" cooldown="80" aim_player="yes">
+      <Modifier at="100" aim_player="yes" angle_change="0" angle="0"/>
+    </Pattern>
+    <Repeat amount="8" angle="40">
+      <Pattern bullet="basic mute" velocity="10" angle="40" angle_change="5" startup="10" cooldown="80" aim_player="yes">
+        <Modifier at="100" aim_player="yes" angle_change="0" angle="0"/>
+      </Pattern>
+    </Repeat>
+    <Pattern bullet="basic" velocity="10" angle_change="5" startup="20" cooldown="80" aim_player="yes">
+      <Modifier at="100" aim_player="yes" angle_change="0" angle="0"/>
+    </Pattern>
+    <Repeat amount="8" angle="40">
+      <Pattern bullet="basic mute" velocity="10" angle="40" angle_change="5" startup="20" cooldown="80" aim_player="yes">
+        <Modifier at="100" aim_player="yes" angle_change="0" angle="0"/>
+      </Pattern>
+    </Repeat>
+    <Pattern bullet="basic" velocity="10" angle_change="5" startup="30" cooldown="80" aim_player="yes">
+      <Modifier at="100" aim_player="yes" angle_change="0" angle="0"/>
+    </Pattern>
+    <Repeat amount="8" angle="40">
+      <Pattern bullet="basic mute" velocity="10" angle="40" angle_change="5" startup="30" cooldown="80" aim_player="yes">
+        <Modifier at="100" aim_player="yes" angle_change="0" angle="0"/>
+      </Pattern>
+    </Repeat>
+	</Type>
+</PatternsFile>

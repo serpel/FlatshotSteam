@@ -1,0 +1,14 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="basic" velocity="8" startup="0" cooldown="200">
+      <Modifier at="50" angle="65" homing="yes"/>
+      <Modifier at="250" homing="no"/>
+    </Pattern>
+    <Repeat amount="29" angle="12">
+      <Pattern bullet="basic mute" angle="12" velocity="8" startup="0" cooldown="200">
+        <Modifier at="50" angle="65" homing="yes"/>
+        <Modifier at="250" homing="no"/>
+      </Pattern>
+    </Repeat>
+	</Type>
+</PatternsFile>

@@ -1,0 +1,18 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="basic" velocity="0" angle="-135" cooldown="4" offset_x="120">
+      <Modifier at="100" velocity="10"/>
+      <Modifier at="130" angle="135"/>
+      <Modifier at="160" angle="-135"/>
+      <Modifier at="190" angle="135"/>
+    </Pattern>
+
+    <Pattern bullet="basic mute" velocity="0" angle="135" cooldown="4" offset_x="120">
+      <Modifier at="100" velocity="10"/>
+      <Modifier at="130" angle="-135"/>
+      <Modifier at="160" angle="135"/>
+      <Modifier at="190" angle="-135"/>
+    </Pattern>
+
+	</Type>
+</PatternsFile>

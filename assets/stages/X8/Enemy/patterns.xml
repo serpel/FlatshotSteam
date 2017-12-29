@@ -1,0 +1,13 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="large" aim_player="yes" random_angle="-40" angle="-20" angle_change="1" ac_frequency="5" velocity="4" startup="0" cooldown="20"/>
+    <Pattern bullet="large mute" aim_player="yes" random_angle="40" angle="-20" angle_change="-1" ac_frequency="5" velocity="4" startup="0" cooldown="20"/>
+    <Repeat amount="12" angle="5" startup="2">
+      <Pattern bullet="basic" angle="150" velocity="7" startup="0" cooldown="100" undestrucrable="yes"/>
+    </Repeat>
+
+    <Repeat amount="12" angle="-5" startup="2">
+      <Pattern bullet="basic" angle="210" velocity="7" startup="50" cooldown="100" undestrucrable="yes"/>
+    </Repeat>
+	</Type>
+</PatternsFile>

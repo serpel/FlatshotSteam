@@ -1,0 +1,14 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="square" undestructable="yes" aim_player="yes" velocity="3" startup="0" cooldown="40"/>
+    <Pattern bullet="square mute" undestructable="yes" aim_player="yes" angle="10" velocity="3" startup="0" cooldown="40"/>
+    <Pattern bullet="square mute" undestructable="yes" aim_player="yes" angle="-10" velocity="3" startup="0" cooldown="40"/>
+
+    <Pattern bullet="basic" angle_change="1" aim_player="yes" random_angle="45" angle="-75" velocity="7" startup="0" cooldown="20">
+      <Modifier at="100" angle_change="0"/>
+    </Pattern>
+    <Pattern bullet="basic mute" angle_change="-1" aim_player="yes" random_angle="-45" angle="75" velocity="7" startup="0" cooldown="20">
+      <Modifier at="100" angle_change="0"/>
+    </Pattern>
+	</Type>
+</PatternsFile>

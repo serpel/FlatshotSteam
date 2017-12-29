@@ -1,0 +1,18 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="large" angle="180" velocity="5" startup="0" cooldown="199" offset_x="300"/>
+    <Repeat amount="5" startup="10">
+      <Pattern bullet="large" angle="180" velocity="5" startup="10" cooldown="199" offset_x="300"/>
+    </Repeat>
+
+    <Pattern bullet="large" angle="-90" velocity="9" startup="0" cooldown="200" offset_y="400" offset_x="100"/>
+    <Repeat amount="5" offset_x="-200">
+      <Pattern bullet="large mute" angle="-90" velocity="9" startup="0" cooldown="200" offset_y="400" offset_x="-100"/>
+    </Repeat>
+
+    <Pattern bullet="large" angle="90" velocity="9" startup="100" cooldown="200" offset_y="-400" offset_x="0"/>
+    <Repeat amount="4" offset_x="-200">
+      <Pattern bullet="large mute" angle="90" velocity="9" startup="100" cooldown="200" offset_y="-400" offset_x="-200"/>
+    </Repeat>
+	</Type>
+</PatternsFile>

@@ -1,0 +1,9 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="basic" velocity="4" angle_change="1" ac_frequency="5" cooldown="39" br_change="-5"/>
+    <Repeat amount="35" angle="10">
+      <Pattern bullet="basic mute" velocity="4" angle="10" angle_change="1" ac_frequency="5" cooldown="39" br_change="-5"/>
+    </Repeat>
+    <Pattern bullet="basic" velocity="10" aim_player="yes" cooldown="19"/>
+	</Type>
+</PatternsFile>

@@ -1,0 +1,12 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="square" startup="25" aim_player="yes" undestructable="yes" velocity="0" acceleration="1" a_frequency="9" cooldown="50"/>
+    <Repeat amount="4" startup="2" a_frequency="-1">
+      <Pattern bullet="square" startup="27" aim_player="yes" undestructable="yes" velocity="0" acceleration="1" a_frequency="8" cooldown="50"/>
+    </Repeat>
+    <Pattern bullet="large" velocity="3" cooldown="50"/>
+    <Repeat amount="9" angle="36">
+      <Pattern bullet="large mute" angle="36" velocity="3" cooldown="50"/>
+    </Repeat>
+	</Type>
+</PatternsFile>

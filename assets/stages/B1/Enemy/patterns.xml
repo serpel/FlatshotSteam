@@ -1,0 +1,19 @@
+<PatternsFile>
+	<Type name="A">
+    <Repeat startup="5" amount="5">
+      <Pattern bullet="basic" velocity="13" startup="0" cooldown="80" aim_player="yes" angle="20">
+        <Modifier at="30" aim_player="yes" angle="0"/>
+      </Pattern>
+    </Repeat>
+    <Repeat startup="5" amount="5">
+      <Pattern bullet="basic mute" velocity="13" startup="0" cooldown="80" aim_player="yes" angle="-20">
+        <Modifier at="30" aim_player="yes" angle="0"/>
+      </Pattern>
+    </Repeat>
+    <Repeat startup="5" amount="5">
+      <Pattern bullet="basic mute" velocity="13" startup="0" cooldown="80" aim_player="yes" angle="0">
+        <Modifier at="30" aim_player="yes" angle="0"/>
+      </Pattern>
+    </Repeat>
+	</Type>
+</PatternsFile>

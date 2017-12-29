@@ -1,0 +1,237 @@
+<PatternsFile>
+	<Type name="A">
+    <Repeat amount="10" angle="10" startup="150">
+    <Pattern bullet="basic" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="0"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="10"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="20"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="30"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="40"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="50"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="60"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="70"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="80"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="90"/>
+    </Pattern>
+
+
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="100"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="110"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="120"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="130"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="140"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="150"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="160"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="170"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="180"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="190"/>
+    </Pattern>
+
+
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="200"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="210"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="220"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="230"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="240"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="250"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="260"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="270"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="280"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="290"/>
+    </Pattern>
+
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="300"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="310"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="320"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="330"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="340"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="350"/>
+    </Pattern>
+    </Repeat>
+
+
+
+    <Repeat amount="10" angle="-10" startup="150">
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="0"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="10"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="20"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="30"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="40"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="50"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="60"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="70"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="80"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="90"/>
+    </Pattern>
+
+
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="100"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="110"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="120"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="130"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="140"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="150"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="160"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="170"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="180"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="190"/>
+    </Pattern>
+
+
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="200"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="210"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="220"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="230"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="240"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="250"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="260"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="270"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="280"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="290"/>
+    </Pattern>
+
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="300"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="310"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="320"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="330"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="340"/>
+    </Pattern>
+    <Pattern bullet="basic mute" bullet_rotation="90" velocity="10" a_frequency="3" startup="0" cooldown="1500" angle="-160">
+      <Modifier at="40" angle_change="1" ac_frequency="8" velocity="2" angle="350"/>
+    </Pattern>
+    </Repeat>
+	</Type>
+</PatternsFile>

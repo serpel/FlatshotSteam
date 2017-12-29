@@ -1,0 +1,5 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="basic" velocity="16" startup="0" cooldown="40" aim_player="yes"/>
+	</Type>
+</PatternsFile>

@@ -1,0 +1,36 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="square" undestructable="yes" velocity="6" random_angle="360" br_change="6" a_frequency="10" startup="0" cooldown="59"/>
+    <Repeat amount="49">
+      <Pattern bullet="square mute" undestructable="yes" velocity="6" random_angle="360" br_change="6" a_frequency="10" startup="0" cooldown="59"/>
+    </Repeat>
+    <Pattern bullet="basic" velocity="6" angle="120" a_frequency="10" startup="0" cooldown="29"  offset_x="-100">
+      <Modifier at="50" angle="-120"/>
+      <Modifier at="100" angle="120"/>
+      <Modifier at="170" angle="-120"/>
+      <Modifier at="240" angle="120"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="6" angle="-120" a_frequency="10" startup="0" cooldown="29"  offset_x="-100">
+      <Modifier at="50" angle="120"/>
+      <Modifier at="100" angle="-120"/>
+      <Modifier at="170" angle="120"/>
+      <Modifier at="240" angle="-120"/>
+    </Pattern>
+    <Repeat amount="2" offset_x="100">
+      <Pattern bullet="basic mute" velocity="6" angle="-120" a_frequency="10" startup="0" cooldown="29"  offset_x="0">
+        <Modifier at="50" angle="120"/>
+        <Modifier at="100" angle="-120"/>
+        <Modifier at="170" angle="120"/>
+        <Modifier at="240" angle="-120"/>
+      </Pattern>
+    </Repeat>
+    <Repeat amount="2" offset_x="100">
+      <Pattern bullet="basic mute" velocity="6" angle="120" a_frequency="10" startup="0" cooldown="29" offset_x="0">
+        <Modifier at="50" angle="-120"/>
+        <Modifier at="100" angle="120"/>
+        <Modifier at="170" angle="-120"/>
+        <Modifier at="240" angle="120"/>
+      </Pattern>
+    </Repeat>
+	</Type>
+</PatternsFile>

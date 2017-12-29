@@ -1,0 +1,159 @@
+<PatternsFile>
+	<Type name="A">
+    <Repeat amount="8" offset_y="50">
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-200">
+        <Modifier at="50" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-200">
+        <Modifier at="51" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-200">
+        <Modifier at="52" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-200">
+        <Modifier at="53" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-200">
+        <Modifier at="54" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-200">
+        <Modifier at="55" acceleration="1" a_frequency="2"/>
+      </Pattern>
+    </Repeat>
+	</Type>
+	<Type name="B">
+    <Repeat amount="10" angle="-6" startup="5">
+      <Pattern bullet="square" undestructable="yes" br_change="1" velocity="4" cooldown="400" angle="210"/>
+    </Repeat>
+    <Repeat amount="10" angle="6" startup="5">
+      <Pattern bullet="square" undestructable="yes" br_change="1" velocity="4" startup="100" cooldown="400" angle="150"/>
+    </Repeat>
+    <Repeat amount="20" startup="5">
+      <Pattern bullet="square" undestructable="yes" br_change="1" velocity="4" startup="200" cooldown="400" angle="150" random_angle="60"/>
+    </Repeat>
+
+
+    <Pattern bullet="basic" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-200">
+      <Modifier at="0" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-200">
+      <Modifier at="1" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-200">
+      <Modifier at="2" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-200">
+      <Modifier at="3" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-200">
+      <Modifier at="4" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-200">
+      <Modifier at="5" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Repeat amount="7" offset_y="50">
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-150">
+        <Modifier at="0" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-150">
+        <Modifier at="1" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-150">
+        <Modifier at="2" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-150">
+        <Modifier at="3" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-150">
+        <Modifier at="4" acceleration="1" a_frequency="2"/>
+      </Pattern>
+      <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="20" offset_y="-150">
+        <Modifier at="5" acceleration="1" a_frequency="2"/>
+      </Pattern>
+    </Repeat>
+
+
+
+
+    <Pattern bullet="basic" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-300" angle="10">
+      <Modifier at="0" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-300" angle="10">
+      <Modifier at="1" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-300" angle="10">
+      <Modifier at="2" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-300" angle="10">
+      <Modifier at="3" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-300" angle="10">
+      <Modifier at="4" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-300" angle="10">
+      <Modifier at="5" acceleration="1" a_frequency="2"/>
+    </Pattern>
+
+
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-300" angle="10">
+      <Modifier at="0" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-300" angle="10">
+      <Modifier at="1" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-300" angle="10">
+      <Modifier at="2" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-300" angle="10">
+      <Modifier at="3" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-300" angle="10">
+      <Modifier at="4" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-300" angle="10">
+      <Modifier at="5" acceleration="1" a_frequency="2"/>
+    </Pattern>
+
+
+
+
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-1300" angle="10">
+      <Modifier at="0" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-1300" angle="10">
+      <Modifier at="1" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-1300" angle="10">
+      <Modifier at="2" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-1300" angle="10">
+      <Modifier at="3" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-1300" angle="10">
+      <Modifier at="4" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="-500" offset_x="-1300" angle="10">
+      <Modifier at="5" acceleration="1" a_frequency="2"/>
+    </Pattern>
+
+
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-1300" angle="10">
+      <Modifier at="0" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-1300" angle="10">
+      <Modifier at="1" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-1300" angle="10">
+      <Modifier at="2" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-1300" angle="10">
+      <Modifier at="3" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-1300" angle="10">
+      <Modifier at="4" acceleration="1" a_frequency="2"/>
+    </Pattern>
+    <Pattern bullet="basic mute" velocity="0" aim_player="yes" startup="0" cooldown="50" offset_y="500" offset_x="-1300" angle="10">
+      <Modifier at="5" acceleration="1" a_frequency="2"/>
+    </Pattern>
+	</Type>
+</PatternsFile>

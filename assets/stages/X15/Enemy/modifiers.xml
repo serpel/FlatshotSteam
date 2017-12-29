@@ -1,0 +1,19 @@
+<ModifiersFile>
+	<Modifier at="0" velocity="5" angle="180"/>
+	<Modifier at="125" velocity="1" angle_change="5"/>
+	<Modifier at="200" pattern_type="A" velocity="1"/>
+
+	<Modifier at="300" pattern_type="A" velocity="200" angle="90"/>
+	<Modifier at="301" velocity="1" angle_change="5"/>
+
+	<Modifier at="500" pattern_type="A" velocity="200" angle="-90"/>
+	<Modifier at="501" velocity="1" angle_change="5"/>
+
+	<Modifier at="700" pattern_type="A" velocity="200" angle="-90"/>
+	<Modifier at="701" velocity="1" angle_change="5"/>
+
+	<Modifier at="900" pattern_type="A" velocity="200" angle="90"/>
+	<Modifier at="901" velocity="1" angle_change="5"/>
+
+	<Modifier at="1099" iterator="300"/>
+</ModifiersFile>

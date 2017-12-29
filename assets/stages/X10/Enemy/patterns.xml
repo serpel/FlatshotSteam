@@ -1,0 +1,87 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="square" undestructable="yes" velocity="2" cooldown="599" homing="yes"/>
+
+
+    <Pattern bullet="large" angle="-90" velocity="5" startup="0" cooldown="299" offset_y="400" offset_x="300">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large" angle="-90" velocity="5" startup="150" cooldown="299" offset_y="400" offset_x="200">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="0" cooldown="299" offset_y="400" offset_x="100">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="150" cooldown="299" offset_y="400" offset_x="0">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="0" cooldown="299" offset_y="400" offset_x="-100">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="150" cooldown="299" offset_y="400" offset_x="-200">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="0" cooldown="299" offset_y="400" offset_x="-300">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="150" cooldown="299" offset_y="400" offset_x="-400">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="0" cooldown="299" offset_y="400" offset_x="-500">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="150" cooldown="299" offset_y="400" offset_x="-600">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="0" cooldown="299" offset_y="400" offset_x="-700">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="150" cooldown="299" offset_y="400" offset_x="-800">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="-90" velocity="5" startup="0" cooldown="299" offset_y="400" offset_x="-900">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+
+
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="0" cooldown="299" offset_y="-400" offset_x="300">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="150" cooldown="299" offset_y="-400" offset_x="200">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="0" cooldown="299" offset_y="-400" offset_x="100">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="150" cooldown="299" offset_y="-400" offset_x="0">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="0" cooldown="299" offset_y="-400" offset_x="-100">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="150" cooldown="299" offset_y="-400" offset_x="-200">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="0" cooldown="299" offset_y="-400" offset_x="-300">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="150" cooldown="299" offset_y="-400" offset_x="-400">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="0" cooldown="299" offset_y="-400" offset_x="-500">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="150" cooldown="299" offset_y="-400" offset_x="-600">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="0" cooldown="299" offset_y="-400" offset_x="-700">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="150" cooldown="299" offset_y="-400" offset_x="-800">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+    <Pattern bullet="large mute" angle="90" velocity="5" startup="0" cooldown="299" offset_y="-400" offset_x="-900">
+      <Modifier at="60" velocity="1"/>
+    </Pattern>
+	</Type>
+</PatternsFile>

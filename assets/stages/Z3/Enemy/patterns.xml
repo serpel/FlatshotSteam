@@ -1,0 +1,19 @@
+<PatternsFile>
+	<Type name="I">
+    <Pattern bullet="basic" aim_player="yes" startup="0" angle="0" velocity="12" angle_change="1" ac_frequency="2" cooldown="14" duration="300"/>
+    <Pattern bullet="basic mute" aim_player="yes" startup="0" angle="0" velocity="12" angle_change="-1" ac_frequency="2" cooldown="14" duration="300"/>
+		<Repeat amount="35" angle="10">
+      <Pattern bullet="basic mute" aim_player="yes" startup="0" angle="10" velocity="12" angle_change="1" ac_frequency="2" cooldown="14" duration="300"/>
+      <Pattern bullet="basic mute" aim_player="yes" startup="0" angle="10" velocity="12" angle_change="-1" ac_frequency="2" cooldown="14" duration="300"/>
+    </Repeat>
+
+    <Pattern bullet="large" bullet_rotation="90" velocity="15" max_velocity="15" animation_velocity="5" startup="0" cooldown="64" aim_player="yes"/>
+    <Pattern bullet="large mute" bullet_rotation="90" velocity="15" angle="10" max_velocity="15" animation_velocity="5" startup="0" cooldown="64" aim_player="yes"/>
+    <Pattern bullet="large mute" bullet_rotation="90" velocity="15" angle="-10" max_velocity="15" animation_velocity="5" startup="0" cooldown="64" aim_player="yes"/>
+
+    <Pattern bullet="square mute" undestructable="yes" velocity="3" max_velocity="10" animation_velocity="5" startup="0" cooldown="64" random_angle="360"/>
+		<Repeat amount="39">
+      <Pattern bullet="square mute" undestructable="yes" velocity="3" max_velocity="10" animation_velocity="5" startup="0" cooldown="64" random_angle="360"/>
+    </Repeat>
+	</Type>
+</PatternsFile>

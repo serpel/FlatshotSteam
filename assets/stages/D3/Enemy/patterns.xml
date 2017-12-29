@@ -1,0 +1,5 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="square" velocity="15" cooldown="100" undestructable="yes" homing="yes" angle="75"/>
+	</Type>
+</PatternsFile>

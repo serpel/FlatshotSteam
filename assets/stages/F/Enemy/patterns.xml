@@ -1,0 +1,10 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="large" velocity="5" cooldown="200" offset_x="-1000" offset_y="100"/>
+    <Pattern bullet="large mute" velocity="5" cooldown="200" offset_x="-1000" offset_y="-120"/>
+
+    <Pattern bullet="large" velocity="5" startup="100" cooldown="200" offset_x="-1000" offset_y="210"/>
+    <Pattern bullet="large mute" velocity="5" startup="100" cooldown="200" offset_x="-1000" offset_y="0"/>
+    <Pattern bullet="large mute" velocity="5" startup="100" cooldown="200" offset_x="-1000" offset_y="-210"/>
+	</Type>
+</PatternsFile>

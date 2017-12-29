@@ -1,0 +1,11 @@
+<PatternsFile>
+	<Type name="A">
+    <Repeat amount="30" startup="1">
+      <Pattern bullet="basic" aim_player="yes" angle="-10" random_angle="20" velocity="7" startup="0" cooldown="100">
+        <Modifier at="50" aim_player="yes" angle="-10" random_angle="20"/>
+        <Modifier at="100" aim_player="yes" angle="-10" random_angle="20"/>
+        <Modifier at="150" aim_player="yes" angle="-10" random_angle="20"/>
+      </Pattern>
+    </Repeat>
+	</Type>
+</PatternsFile>

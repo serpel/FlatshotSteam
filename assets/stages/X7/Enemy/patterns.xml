@@ -1,0 +1,10 @@
+<PatternsFile>
+	<Type name="A">
+    <Pattern bullet="large" velocity="6" max_velocity="15" animation_velocity="5" startup="0" cooldown="19" aim_player="yes" angle="-20"/>
+    <Pattern bullet="large mute" velocity="6" max_velocity="15" animation_velocity="5" startup="0" cooldown="19" aim_player="yes" angle="0"/>
+    <Pattern bullet="large mute" velocity="6" max_velocity="15" animation_velocity="5" startup="0" cooldown="19" aim_player="yes" angle="20"/>
+
+    <Pattern bullet="large mute" velocity="3" max_velocity="15" animation_velocity="5" startup="0" cooldown="39" aim_player="yes" angle="-10"/>
+    <Pattern bullet="large mute" velocity="3" max_velocity="15" animation_velocity="5" startup="0" cooldown="39" aim_player="yes" angle="10"/>
+	</Type>
+</PatternsFile>
